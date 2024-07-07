@@ -60,6 +60,13 @@
     --bs-body-bg: #fff
 }
 
+.og-image {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+
 *,
 ::after,
 ::before {
