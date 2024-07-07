@@ -73,13 +73,6 @@
  * #RESET 
 \*-----------------------------------*/
 
-.og-image {
-  display: block;
-  margin-top: 20px;
-  width: 100%;
-  height: auto;
-}
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
