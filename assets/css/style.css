@@ -197,6 +197,23 @@ header .container {
 
 .header-actions { display: none; }
 
+.navbar {
+  background-color: #050505;
+  min-height: 3.25rem;
+  z-index: 30
+}
+
+.navbar.is-fixed-bottom,
+.navbar.is-fixed-top {
+  position: fixed;
+  right: 180px;
+  left: 180px;
+}
+
+.navbar.is-fixed-top {
+  top: 0
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
