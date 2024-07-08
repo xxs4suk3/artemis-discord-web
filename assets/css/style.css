@@ -197,7 +197,9 @@ header .container {
 
 .header-actions { display: none; }
 
-.navbar {
+/**INVESTIGAR COMO FUNCIONA**/
+
+/**.navbar {
   background-color: #050505;
   min-height: 3.25rem;
   z-index: 30
@@ -212,7 +214,7 @@ header .container {
 
 .navbar.is-fixed-top {
   top: 0
-}
+}**/
 
 .nav {
   display: flex;
