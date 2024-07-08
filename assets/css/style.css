@@ -37,9 +37,9 @@
   --eerie-black-2: hsl(0, 0%, 7%);
   --rich-black-fogra-39: hsl(0, 0%, 2%);
 
-  /**
-   * typography
-   */
+/**
+ * typography
+ */
 
   --ff-roboto: "Roboto", sans-serif;
 
@@ -53,21 +53,16 @@
   --fs-8: 13px;
   --fs-9: 12px;
   --fs-10: 11px;
-
+ 
   --fw-500: 500;
   --fw-700: 700;
-
-  /**
-   * transition
-   */
-
+  
+/**
+* transition
+*/
+ 
   --transition: 0.15s ease-in-out;
-
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #RESET 
@@ -130,10 +125,6 @@ button, a, input, [tabindex] { outline-offset: 4px; }
 
 ::-webkit-scrollbar-button { height: 5px; }
 
-
-
-
-
 /*-----------------------------------*\
  * #REUSED STYLE 
 \*-----------------------------------*/
@@ -178,7 +169,6 @@ button, a, input, [tabindex] { outline-offset: 4px; }
 .btn-primary {
   background: var(--golden-puppy);
   color: var(--black);
-  border-radius: 6px;
 }
 
 .btn-secondary {
@@ -190,11 +180,6 @@ button, a, input, [tabindex] { outline-offset: 4px; }
 .btn-primary:is(:hover, :focus) { background: hsl(0, 0%, 0%); }
 
 .btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 0%); }
-
-
-
-
-
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
@@ -886,8 +871,7 @@ header .container {
 }
 
 .hero-banner {
-  border: 10px solid;
-  color:#ffffff05 ;
+  border: px solid;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -897,10 +881,6 @@ header .container {
   height: 100%;
   object-fit: cover;
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #NEW PRODUCT, EXPLORE PRODUCT
@@ -1051,10 +1031,6 @@ header .container {
   border-radius: 4px;
 }
 
-
-
-
-
 /*-----------------------------------*\
  * #ABOUT
 \*-----------------------------------*/
@@ -1064,6 +1040,7 @@ header .container {
 .about-title {
   text-align: center;
   margin-bottom: 40px;
+  font-size: 50px;
 }
 
 .about-list {
@@ -1132,21 +1109,17 @@ header .container {
 
 .about-card-title {
   margin-bottom: 20px;
+  position: center;
   transition: var(--transition);
-  color:hsl(0, 0%, 100%)
 }
 
-.about-item:hover .about-card-title {color:hsl(0, 0%, 100%)  ; }
+.about-item:hover .about-card-title { color: var(--golden-puppy); }
 
 .about-card-text {
   font-size: var(--fs-7);
   line-height: 1.5;
-  color:hsl(0, 0%, 100%)
+  color:#fff
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #EXPLORE PRODUCT
@@ -1156,10 +1129,6 @@ header .container {
   background: var(--eerie-black-2);
   padding: 60px 0;
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #TOP SELLER 
@@ -1271,10 +1240,6 @@ header .container {
   color: var(--quick-silver);
   font-size: var(--fs-10);
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #FOOTER
@@ -1399,10 +1364,6 @@ header .container {
 
 .footer-bottom-links a:hover { color: var(--golden-puppy); }
 
-
-
-
-
 /*-----------------------------------*\
  * #GO TO TOP
 \*-----------------------------------*/
@@ -1419,10 +1380,7 @@ header .container {
   place-items: center;
   font-size: 24px;
   border-radius: 50%;
-  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  box-shadow: 0 2px 4px var(--golden-puppy);
   transition: opacity 0.25s ease-in-out;
 }
 
@@ -1433,10 +1391,6 @@ header .container {
 }
 
 .go-top:hover { --eerie-black-1: hsl(0, 0%, 20%); }
-
-
-
-
 
 /*-----------------------------------*\
  * #MEDIA QUERIES
@@ -1619,23 +1573,17 @@ header .container {
   .about-title,
   .top-seller-title { margin-bottom: 60px; }
 
-
-
   /**
    * GO TO TOP
    */
 
-  .go-top {
+   .go-top {
     width: 60px;
     height: 60px;
     font-size: 30px;
   }
 
 }
-
-
-
-
 
 /**
  * responsive for larger than 1024px screen
