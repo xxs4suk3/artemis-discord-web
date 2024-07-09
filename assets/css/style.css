@@ -199,22 +199,24 @@ header .container {
 
 /**INVESTIGAR COMO FUNCIONA**/
 
-/**.navbar {
+.navbar {
   background-color: #050505;
   min-height: 3.25rem;
-  z-index: 30
+  z-index: 30;
+  align-items: center;
+
 }
 
 .navbar.is-fixed-bottom,
 .navbar.is-fixed-top {
   position: fixed;
-  right: 180px;
-  left: 180px;
+  right: 0;
+  left: 0;
 }
 
 .navbar.is-fixed-top {
   top: 0
-}**/
+}
 
 .nav {
   display: flex;
