@@ -204,7 +204,6 @@ header .container {
   min-height: 3.25rem;
   z-index: 30;
   align-items: center;
-
 }
 
 .navbar.is-fixed-bottom,
@@ -212,7 +211,7 @@ header .container {
   position: fixed;
   right: 0;
   left: 0;
-  background-color: rgba(5,5,5,0.65);
+  background-color: rgba(5,5,5,0.95);
 }
 
 .navbar.is-fixed-top {
