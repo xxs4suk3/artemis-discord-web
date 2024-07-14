@@ -12,6 +12,20 @@
 	--card-background: #2a2d31;
 }
 
+.tw-bg-gray-850 {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(23 24 33/var(--tw-bg-opacity)) !important;
+}
+
+ul {
+    list-style: none;
+}
+
+ol,
+ul {
+    padding: 0;
+}
+
 .badge-vip{
 	background-color: var(--main-color) !important;
 }
