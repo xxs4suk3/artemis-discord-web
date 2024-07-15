@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/privacy-policy",
-        "destination": "./pages/privacy-policy.html"
+        "destination": "/pages/privacy-policy.html"
       }
     ]
   }
