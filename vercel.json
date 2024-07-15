@@ -1,7 +1,9 @@
 {
-"paths": {
-    "@/*": [
-      "./pages*"
+    "rewrites": [
+      {
+        "source": "@/*",
+        "destination": "./pages*"
+      }
     ]
   }
-}
+  
