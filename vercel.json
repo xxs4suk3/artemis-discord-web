@@ -1,8 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "@/*",
-        "destination": "./pages*"
+        "source": "/privacy-policy",
+        "destination": "./pages/privacy-policy.html"
       }
     ]
   }
