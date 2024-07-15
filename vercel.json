@@ -1,7 +1,8 @@
 {
     "rewrites": [
         { "source": "index.html", "destination": "" },
-        { "source": "/privacy-policy", "destination": "https://artemis-bot.vercel.app/pages/privacy-policy.html" },
+        { "source": "/privacy-policy", "destination": "/pages/privacy-policy.html" },
         { "source": "/page/commands.html", "destination": "/commands" }
-    ]
+    ],
+    "cleanUrls": true
   }  
