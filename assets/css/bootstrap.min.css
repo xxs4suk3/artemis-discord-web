@@ -3149,7 +3149,8 @@ fieldset:disabled .btn {
 .btn-secondary {
     color: #fff;
     background-color: #ffffff;
-    border-color: #ffffff
+    border-color: #ffffff;
+    margin: 5px;
 }
 
 .btn-secondary:hover {
@@ -3587,8 +3588,8 @@ fieldset:disabled .btn {
 
 .btn-outline-info:hover {
     color: #000;
-    background-color: var(--golden-puppy);
-    border-color: var(--golden-puppy)
+    background-color: #1E90FF;
+    border-color: #1E90FF
 }
 
 .btn-check:focus+.btn-outline-info,
