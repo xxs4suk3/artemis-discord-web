@@ -1,4 +1,5 @@
 name: 📅 Schedule Workflow Dispatch
+name: Publish new version
 
 on:
   schedule:
@@ -33,4 +34,4 @@ jobs:
           # Add, check for changes, and commit if any
           git add lastUpdate
           git diff --quiet && git diff --staged --quiet || git commit -m "${commit_message}"
-          git push origin master
+          git push origin main  # Changed to 'main' instead of 'master'
