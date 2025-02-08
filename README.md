@@ -1,4 +1,7 @@
-<img src="./assets/images/artemis.gif">
+<div align="center">
+    <h1 align="center"> Artemis Discord Web </h1>
+    <p align='center'><img src="./assets/images/artemis.gif"></p>
+</div>
 
 # Discord Bot Website  
 
