@@ -1,3 +1,5 @@
+<img src="./assets/images/artemis.gif">
+
 # Discord Bot Website  
 
 This is a website designed for a **Discord bot**, originally created for use with **"Artemis#1749"**, providing **24/7 moderation** features.  
