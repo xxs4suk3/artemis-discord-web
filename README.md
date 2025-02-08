@@ -1,12 +1,17 @@
-<center>
-  <img src="botsite.png">
-  <h3> Discord Bot Website </h3>
-  <p> Simple good looking discord bot responsive website </p>
-</center>
+# Discord Bot Website  
 
+This is a website designed for a **Discord bot**, originally created for use with **"Artemis#1749"**, providing **24/7 moderation** features.  
 
-linea 817 style.css se puede cambiar color principal letras arriba
+## 🎨 Customization  
+You can modify the website's appearance by editing the following lines:  
+- **`style.css` (line 817)** – Change the main text color.  
+- **`style.css` (line 823)** – Modify the hover color effect.  
+- **`bootstrap.min.css` (line 7959)** – Adjust the background color.  
 
-823 cambiar color cuando se pone encima
+## 📌 Fork Information  
+This project is **forked from** [diwasatreya/Discord-Bot-Web](https://github.com/diwasatreya/Discord-Bot-Web).  
 
-linea 7959 se pueda cambiar color background arriba bootstrap.min.css
+## 🔧 Setup & Installation  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/xxs4suk3/artemis-discord-web
