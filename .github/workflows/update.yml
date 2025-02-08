@@ -1,0 +1,25 @@
+name: Auto Update Vercel Deployment
+
+on:
+  schedule:
+    - cron: '0 6 * * *' 
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Get last commit message
+        id: last_commit
+        run: echo "NUMBER=$(git log -1 --pretty=format:%s | grep -oE '[0-9]+$' || echo 0)" >> $GITHUB_ENV
+
+      - name: Increment commit number
+        run: |
+          NEW_NUMBER=$((NUMBER + 1))
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git commit --allow-empty -m "$NEW_NUMBER"
+          git push
