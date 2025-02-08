@@ -2,35 +2,28 @@ name: 📅 Schedule Workflow Dispatch
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Runs every day at 7 AM Madrid time (UTC+1/UTC+2)
+    - cron: '0 6 * * *' # every day at 7 AM Madrid (UTC+1/UTC+2)
   workflow_dispatch:
-  repository_dispatch:
-    types:
-      - webhook
+    inputs:
+      date:
+        description: 'Date to run the workflow'
+        required: true
+        type: string
+        default: 'in 1 day'
+
+concurrency:
+  group: schedule${{ github.event.inputs.date }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  schedule:
+    name: 📅 Schedule
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-          # Get the current date in Unix format
-          date +%s > lastUpdate
-          
-          # Git configuration
-          git config user.name "xxs4suk3"
-          git config user.email "bohanjiang09@gmail.com"
-
-          # Calculate days since last update
-          last_update=$(cat lastUpdate)
-          current_day=$(date +%s)
-          day_difference=$(( (current_day - last_update) / 86400 ))  # 86400 seconds in a day
-          
-          # Create commit message with the day number
-          commit_message="[bot] Update blog with day ${day_difference}"
-
-          # Add, check for changes, and commit if any
-          git add lastUpdate
-          git diff --quiet && git diff --staged --quiet || git commit -m "${commit_message}"
-          git push origin main  # Changed to 'main' instead of 'master'
+      - uses: austenstone/schedule@v1.3
+        with:
+          github-token: ${{ secrets.TOKEN }}
+          date: ${{ github.event.inputs.date }}
+          workflow: 'update.yml'  # Make sure this is the correct workflow file
+          timezone: 'Europe/Madrid' # For Madrid time zone
+          wait-ms: 45000
